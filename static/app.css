@@ -1,0 +1,41 @@
+@import "/landing.css";
+
+
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  
+  :root {
+    --background: rgba(227, 222, 219, 1.0);  /* e3dedbff,  : Try these colors*/
+    --navbackground: rgba(162, 162, 168, 0.048);
+    --navshadow: rgba(199, 195, 195, 0.8);
+    --text-primary: black;
+    --text-secondary: royalblue;
+    --text-tertiary: rgb(182, 180, 83);
+    --accent: purple;
+    --transparent:  rgba(255, 255, 255, 0.048);
+  }
+  [data-theme='dark'] {
+    --background: rgb(36, 34, 28); /* -24221cff this is the preffered dark-mode color, other options: */ 
+    --navbackground: rgb(24, 24, 26);
+    --navshadow: rgba(83, 81, 81, 0.8);
+    --text-primary: white;
+    --text-secondary: grey;
+    --text-tertiary: rgb(55, 55, 56);
+    --accent: darkred;
+  }
+
+  
