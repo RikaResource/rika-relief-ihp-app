@@ -1,0 +1,96 @@
+.Landing {
+    color : var(--text-primary);
+    background-color: var(--background);
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    height : calc(100vh - 0px);
+    transition: all .5s;
+}
+
+.ThemeToggle {
+    color : var(--text-primary);
+    background-color: var(--background);
+    border: 2px var(--text-primary) solid;
+    float: right;
+    transition: all .5s;
+}
+
+.LandingLogo {
+    color : var(--text-primary);
+    background-color: green;
+    position:absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 50px;
+    width: 400px;
+    height: calc(100vh / 2.5);
+    transition: all .5s;
+}
+
+.LogoImage {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.LogoText {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.LogoTextWrapper {
+    position: absolute;
+    background-color: yellow;
+    width: 300px;
+    height: 70px;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.LandingContent {
+    background-color: aqua;
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh / 2);
+    left:0;
+    bottom:0;
+}
+
+.LandingMain {
+    background-color: brown;
+    position: absolute;
+    width : calc(100% / 2);
+    left : calc(50% - (calc(100% / 4)));
+    top: 10px;
+    height: calc(100% / 3);
+}
+
+.MainLandingText {
+    text-align: center;
+}
+
+.MainLandingSubText {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.InviteWrapper {
+    position: absolute;
+    background-color: crimson;
+    bottom: 80px;
+    width : calc(100% / 1.5);
+    height: calc(100% / 3);
+    left : calc(50% - (calc(100% / 3)));
+}
