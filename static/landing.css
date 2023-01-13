@@ -25,11 +25,11 @@
 
 .LandingLogo {
     color : var(--text-primary);
-    background-color: green;
+    /* background-color: green; */
     position:absolute;
     left: 50%;
     margin-left: -200px;
-    top: 50px;
+    top: 70px;
     width: 400px;
     height: calc(100vh / 2.5);
     transition: all .5s;
@@ -37,6 +37,7 @@
 
 .LogoImage {
     position: absolute;
+    display: block;
     left: 50%;
     margin-left: -100px;
     top: 30px;
@@ -45,13 +46,14 @@
 }
 
 .LogoText {
+    position: relative;
     text-align: center;
     margin-top: 10px;
 }
 
 .LogoTextWrapper {
     position: absolute;
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 300px;
     height: 70px;
     bottom: 30px;
@@ -60,7 +62,7 @@
 }
 
 .LandingContent {
-    background-color: aqua;
+    /* background-color: aqua; */
     position: absolute;
     width: 100vw;
     height: calc(100vh / 2);
@@ -69,7 +71,7 @@
 }
 
 .LandingMain {
-    background-color: brown;
+    /* background-color: brown; */
     position: absolute;
     width : calc(100% / 2);
     left : calc(50% - (calc(100% / 4)));
@@ -79,18 +81,29 @@
 
 .MainLandingText {
     text-align: center;
+    font-size: 50px;
 }
 
 .MainLandingSubText {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 0;
+    /* font-size: 30px; */
 }
 
 .InviteWrapper {
     position: absolute;
-    background-color: crimson;
-    bottom: 80px;
+    /* background-color: crimson; */
+    bottom: 120px;
     width : calc(100% / 1.5);
     height: calc(100% / 3);
     left : calc(50% - (calc(100% / 3)));
+}
+
+.ParticipateButton {
+    position: absolute;
+    /* bottom: 10px; */
+    width : 200px;
+    height: 50px;
+    left : calc(50% - calc(200px / 2));
+    top : calc(50% - calc(50px / 2));
 }
