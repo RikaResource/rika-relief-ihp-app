@@ -3,7 +3,7 @@ let
   ihpApp = import ../.;
   # TODO: Enable SSL/HTTPS when your domain records are hooked up
   # By enabling SSL, you accept the terms and conditions of LetsEncrypt
-  httpsEnabled = false;
+  httpsEnabled = true;
   jobsEnabled = false;
 in
 {
@@ -29,8 +29,8 @@ in
     # you can switch out "localhost" with a custom domain name
     # "localhost" = {
     "rikarelief.org" = {
-      serverAliases = [ ];
-      # serverAliases = [ "rikarelief.org" "rikarelief.org" "rikarelief.org" ];
+      # serverAliases = [ ];
+      serverAliases = [ "www.rikarelief.org" ];
       enableACME = httpsEnabled;
       forceSSL = httpsEnabled;
       locations = {
