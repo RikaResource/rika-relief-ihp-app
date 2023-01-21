@@ -27,8 +27,10 @@ in
   };
   services.nginx.virtualHosts = {
     # you can switch out "localhost" with a custom domain name
-    "localhost" = {
+    # "localhost" = {
+    "rikarelief.org" = {
       serverAliases = [ ];
+      # serverAliases = [ "rikarelief.org" "rikarelief.org" "rikarelief.org" ];
       enableACME = httpsEnabled;
       forceSSL = httpsEnabled;
       locations = {
