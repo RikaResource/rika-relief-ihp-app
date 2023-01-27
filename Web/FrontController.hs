@@ -8,7 +8,6 @@ import Web.View.Layout (defaultLayout)
 import Web.Controller.Comments
 import Web.Controller.BlogPosts
 import Web.Controller.Static
-import Admin.Controller.Static
 
 instance FrontController WebApplication where
     controllers = 
