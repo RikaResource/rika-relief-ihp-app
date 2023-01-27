@@ -1,0 +1,49 @@
+.About {
+    color : var(--text-primary);
+    background-color: var(--background);
+    font-weight: bold;
+    padding: 20px;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    /* height:100%; */
+    max-width:100%;
+    /* height : calc(100vh - 0px); */
+    overflow-x: hidden;
+    transition: all .5s;
+}
+
+
+.AboutContentWrapper {
+    position: absolute;
+    /* background-color: crimson; */
+    width: calc(100vw - 2%);
+    /* height: calc(100vh - 20%); */
+    margin-top: 50px;
+}
+.AboutContent{
+    /* text-align: center; */
+    /* background-color: crimson; */
+}
+
+.AboutContent h1 {
+    font-size: calc(1.5rem + 2vw);
+    text-align: center;
+}
+
+.AboutParagraphWrapper {
+    position: absolute;
+    /* background-color: aqua; */
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    margin-top: 60px;
+    width: calc(100vw - 30%);
+    left: calc(50% - ((100vw - 30%)/2.0));
+}
+
+.AboutParagraph {
+    text-align: justify;
+    font-size: calc(0.9rem + 1vw);
+}

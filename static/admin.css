@@ -1,0 +1,270 @@
+.admin-dash-wrapper {
+    color : var(--text-primary);
+    background-color: var(--background);
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    max-width:100%;
+    overflow-x: hidden;
+    height : calc(100vh - 0px);
+    transition: all .5s;
+}
+
+
+
+.admin-dash-content {
+    position: absolute;
+    background-color: red;
+    width: calc(100vw - 20%);
+    height: calc(100vh - 20%);
+    top : calc(50% - ((100vh - 20%)/2));
+    left : calc(50% - ((100vw - 20%)/2));
+}
+.admin-intro {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.admin-dash-board {
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    height: 100%;
+    margin-top: 10px;
+
+}
+
+.admin-blog-tile {
+    background-color: aqua;
+    height : 300px;
+    width: 300px;
+    flex: 1;
+    margin: 20px;
+    border: 1px solid seashell;
+    /* flex: 200px; */
+}
+.admin-profile-tile {
+    background-color: palevioletred;
+    /* flex: 200px; */
+    height : 300px;
+    width: 300px;
+    flex: 1;
+    margin: 20px;
+    border: 1px solid seashell;
+}
+.admin-resources-tile {
+    background-color: purple;
+    /* flex: 200px; */
+    height : 300px;
+    width: 300px;
+    flex: 1;
+    margin: 20px;
+    border: 1px solid seashell;
+}
+.admin-interact-tile {
+    background-color: goldenrod;
+    /* flex: 200px; */
+    height : 300px;
+    width: 300px;
+    flex: 1;
+    margin: 20px;
+    border: 1px solid seashell;
+}
+.admin-keys-tile {
+    background-color: orchid;
+    /* flex: 200px; */
+    height : 300px;
+    width: 300px;
+    flex: 1;
+    margin: 20px;
+    border: 1px solid seashell;
+}
+.admin-app-tile {
+    background-color: orangered;
+    /* flex: 200px; */
+    height : 300px;
+    width: 300px;
+    flex: 1;
+    margin: 20px;
+    border: 1px solid seashell;
+}
+
+.tile-image {
+
+}
+
+.tile-text {
+    position: absolute;
+    background-color: bisque;
+    text-align: center;
+}
+
+@media screen {
+    
+}
+
+@media (max-width: 700px) {
+    .admin-dash-content {
+        position: absolute;
+        background-color: red;
+        width: calc(100vw - 20%);
+        height: calc(100vh - 20%);
+        top : calc(50% - ((100vh - 20%)/2));
+        left : calc(50% - ((100vw - 20%)/2));
+    }
+    .admin-intro {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .admin-dash-board {
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px;
+        height: 100%;
+        margin-top: 10px;
+    
+    }
+    
+    .admin-blog-tile {
+        background-color: aqua;
+        height : 300px;
+        width: 200px;
+        flex: 1;
+        margin: 10px;
+        /* flex: 200px; */
+    }
+    .admin-profile-tile {
+        background-color: palevioletred;
+        /* flex: 200px; */
+        height : 300px;
+        width: 200px;
+        flex: 1;
+        margin: 10px;
+    }
+    .admin-resources-tile {
+        background-color: purple;
+        /* flex: 200px; */
+        height : 300px;
+        width: 200px;
+        flex: 1;
+        margin: 10px;
+    }
+    .admin-interact-tile {
+        background-color: goldenrod;
+        /* flex: 200px; */
+        height : 300px;
+        width: 200px;
+        flex: 1;
+        margin: 10px;
+    }
+    .admin-keys-tile {
+        background-color: orchid;
+        /* flex: 200px; */
+        height : 300px;
+        width: 200px;
+        flex: 1;
+        margin: 10px;
+    }
+    .admin-app-tile {
+        background-color: orangered;
+        /* flex: 200px; */
+        height : 300px;
+        width: 200px;
+        flex: 1;
+        margin: 10px;
+    }
+  }
+
+@media (max-width: 1300px) and (min-width: 701px) { 
+    .admin-dash-content {
+        position: absolute;
+        background-color: red;
+        width: calc(100vw - 20%);
+        height: calc(100vh - 20%);
+        top : calc(50% - ((100vh - 20%)/2));
+        left : calc(50% - ((100vw - 20%)/2));
+    }
+    .admin-intro {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .admin-dash-board {
+        background-color: green;
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* justify-content: space-around; */
+        padding: 30px;
+        height: 100%;
+        margin-top: 10px;
+    
+    }
+    
+    .admin-blog-tile {
+        background-color: aqua;
+        height : 300px;
+        width: 200px;
+        /* flex: 1; */
+        margin: 10px;
+        /* flex: 200px; */
+    }
+    .admin-profile-tile {
+        background-color: palevioletred;
+        /* flex: 200px; */
+        height : 300px;
+        width: 200px;
+        /* flex: 1; */
+        margin: 10px;
+    }
+    .admin-resources-tile {
+        background-color: purple;
+        /* flex: 200px; */
+        height : 300px;
+        width: 200px;
+        flex: 1;
+        margin: 10px;
+    }
+    .admin-interact-tile {
+        background-color: goldenrod;
+        /* flex: 200px; */
+        height : 300px;
+        width: 200px;
+        flex: 1;
+        margin: 10px;
+    }
+    .admin-keys-tile {
+        background-color: orchid;
+        /* flex: 200px; */
+        height : 300px;
+        width: 200px;
+        flex: 1;
+        margin: 10px;
+    }
+    .admin-app-tile {
+        background-color: orangered;
+        /* flex: 200px; */
+        height : 300px;
+        width: 200px;
+        flex: 1;
+        margin: 10px;
+    }
+
+}

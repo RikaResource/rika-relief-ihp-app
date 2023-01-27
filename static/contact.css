@@ -1,0 +1,38 @@
+.Contact {
+    color : var(--text-primary);
+    background-color: var(--background);
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    max-width:100%;
+    overflow-x: hidden;
+    height : calc(100vh - 0px);
+    transition: all .5s;
+}
+
+.ContactContentWrapper {
+    position: absolute;
+    /* background-color: crimson; */
+    width: calc(100vw - 2%);
+    height: calc(100vh - 20%);
+    margin-top: 50px;
+}
+
+.ContactContent {
+    text-align: center;
+}
+
+.ContactParagraph {
+    text-align: center;
+    font-size: calc(1.3rem + 1vw);
+}
+
+.ContactEmail {
+    text-decoration-color: var(--text-secondary);
+}

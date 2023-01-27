@@ -14,13 +14,16 @@ instance View WelcomeView where
             <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">About</a>
+                  <a class="nav-link" aria-current="page" href="/home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link" aria-current="page" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                  <a class="nav-link" href="/BlogPosts">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact" tabindex="-1" aria-disabled="true">Contact</a>
                 </li>
               </ul>
             </div>

@@ -22,3 +22,32 @@ Notable isssues:
     - The nav bar has deal links.
     - The overall style needs to be imporoved.
     - The page content may need to be changed to fit better.
+
+#### 21 Jan 2023
+
+Added the BlogPost scafolding, this includes:
+
+- The Actions for creating new blog posts
+- The Views for viewing the blogPosts and the comments associated
+- The Controllers for the BlogPosts and the Comments.
+- Also this is a sort of continuation to the other stuff on deploying to shipnix and some fiddling with authentication (which doesn't work as exprected)
+
+This opens up the direction for ensuring only the admins can add blogposts and comments are added by anyone really.
+
+Here are some of the things we need to in the next coding session:
+
+- Complete the authentication both for the admins and other users.
+- Move the createPost and EditPosts to the Admin app (Maybe we just need to import the relavant modules)
+- Look at some of the other issues opened the other time.
+- The tags look like shit, need to fix that.
+- Redesign the entire blog page to match the overall aesthetic of the page.
+- Design an admin page, both in the visuals only and also the html and css part (Mostly thinking of flex box and some forms)
+
+#### 27 Jan 2023
+
+Some ideas On Admin management:
+
+- To keep the creation of Admin accounts to few people, we'll have a key system where there will be a zeroth admin who will then invite other admins who
+  can then generate other keys to invite other admins. The set of keys an admin can create is limited.
+- Changed the blog page to mostlty be modifiable through the admin application.
+- Made some responsive tweaks.
