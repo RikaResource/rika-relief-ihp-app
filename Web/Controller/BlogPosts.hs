@@ -6,50 +6,30 @@ import Web.View.BlogPosts.New
 import Web.View.BlogPosts.Edit
 import Web.View.BlogPosts.Show
 
+import qualified Text.MMark as MMark
+
 instance Controller BlogPostsController where
     action BlogPostsAction = do
-        blogPosts <- query @BlogPost |> fetch
+        blogPosts <- query @BlogPost 
+                |> orderByDesc #createdAt
+                |> fetch
         render IndexView { .. }
-
-    action NewBlogPostAction = do
-        let blogPost = newRecord
-        render NewView { .. }
 
     action ShowBlogPostAction { blogPostId } = do
         blogPost <- fetch blogPostId
+                >>= pure . modify #comments (orderByDesc #createdAt)
+                >>= fetchRelated #comments
         render ShowView { .. }
-
-    action EditBlogPostAction { blogPostId } = do
-        blogPost <- fetch blogPostId
-        render EditView { .. }
-
-    action UpdateBlogPostAction { blogPostId } = do
-        blogPost <- fetch blogPostId
-        blogPost
-            |> buildBlogPost
-            |> ifValid \case
-                Left blogPost -> render EditView { .. }
-                Right blogPost -> do
-                    blogPost <- blogPost |> updateRecord
-                    setSuccessMessage "BlogPost updated"
-                    redirectTo EditBlogPostAction { .. }
-
-    action CreateBlogPostAction = do
-        let blogPost = newRecord @BlogPost
-        blogPost
-            |> buildBlogPost
-            |> ifValid \case
-                Left blogPost -> render NewView { .. } 
-                Right blogPost -> do
-                    blogPost <- blogPost |> createRecord
-                    setSuccessMessage "BlogPost created"
-                    redirectTo BlogPostsAction
-
-    action DeleteBlogPostAction { blogPostId } = do
-        blogPost <- fetch blogPostId
-        deleteRecord blogPost
-        setSuccessMessage "BlogPost deleted"
-        redirectTo BlogPostsAction
 
 buildBlogPost blogPost = blogPost
     |> fill @["title", "body", "tags"]
+    |> validateField #title nonEmpty
+    |> validateField #body nonEmpty
+    |> validateField #body isMarkdown
+
+
+isMarkdown :: Text -> ValidatorResult
+isMarkdown text = 
+    case MMark.parse "" text of
+        Left _  -> Failure "Please provide valid Markdown"
+        Right _ -> Success

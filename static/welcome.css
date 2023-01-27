@@ -38,6 +38,7 @@
 .LogoImage {
     position: absolute;
     display: block;
+    max-width: 100%;
     left: 50%;
     margin-left: -100px;
     top: 30px;
@@ -49,6 +50,7 @@
     position: relative;
     text-align: center;
     margin-top: 10px;
+    font-size: calc(1.0rem + 2vw);
 }
 
 .LogoTextWrapper {
@@ -81,7 +83,7 @@
 
 .MainLandingText {
     text-align: center;
-    font-size: 50px;
+    font-size: calc(1.2rem + 2vw);
 }
 
 .MainLandingSubText {
