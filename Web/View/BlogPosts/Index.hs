@@ -29,18 +29,13 @@ instance View IndexView where
                     </div>
                   </div>
                 </nav>
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th class="blog-intro">Our Blog</th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>{forEach blogPosts renderBlogPost}</tbody>
-                </table>
+            <div class="blog-content">
+              <div class="blog-intro">
+                <h1>Our Blog</h1>
+              </div>
+              <div class="blog-list">
 
+              </div>
             </div>
         </div>
     |]
