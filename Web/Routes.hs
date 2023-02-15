@@ -17,8 +17,5 @@ instance CanRoute StaticController where
 
 instance AutoRoute BlogPostsController
 
-    
-
-
 instance AutoRoute CommentsController
 

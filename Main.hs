@@ -8,8 +8,8 @@ import IHP.FrameworkConfig
 import IHP.Job.Types
 import Web.FrontController
 import Web.Types
--- import Admin.FrontController
--- import Admin.Types
+import Admin.FrontController
+import Admin.Types
 
 instance FrontController RootApplication where
     controllers = [

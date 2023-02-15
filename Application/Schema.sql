@@ -4,7 +4,9 @@ CREATE TABLE blog_posts (
     title TEXT NOT NULL,
     body TEXT NOT NULL,
     tags TEXT[] DEFAULT '{}' NOT NULL,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    author TEXT NOT NULL,
+    post_teaser TEXT NOT NULL
 );
 CREATE TABLE users (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY NOT NULL,
