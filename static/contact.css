@@ -1,4 +1,4 @@
-.Contact {
+/* .Contact {
     color : var(--text-primary);
     background-color: var(--background);
     font-size: large;
@@ -14,6 +14,22 @@
     overflow-x: hidden;
     height : calc(100vh - 0px);
     transition: all .5s;
+} */
+
+.Contact {
+    color : var(--text-primary);
+    background-color: var(--background);
+    /* font-size: large; */
+    /* font-weight: bold; */
+    /* padding: 20px; */
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    /* max-width:100%; */
+    height : calc(100vh - 0px);
+    transition: all .5s;
+    text-align: center;
 }
 
 .ContactContentWrapper {

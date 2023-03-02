@@ -13,7 +13,7 @@ instance Controller BlogPostsController where
         blogPosts <- query @BlogPost 
                 |> orderByDesc #createdAt
                 |> fetch
-        render IndexView { .. }
+        render IndexView { blogPosts = blogPosts}
 
     action ShowBlogPostAction { blogPostId } = do
         blogPost <- fetch blogPostId
@@ -22,7 +22,7 @@ instance Controller BlogPostsController where
         render ShowView { .. }
 
 buildBlogPost blogPost = blogPost
-    |> fill @["title", "body", "tags"]
+    |> fill @["title", "body", "tags", "author", "post_teaser"]
     |> validateField #title nonEmpty
     |> validateField #body nonEmpty
     |> validateField #body isMarkdown

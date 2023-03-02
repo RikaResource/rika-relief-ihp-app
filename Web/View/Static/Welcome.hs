@@ -1,38 +1,17 @@
 module Web.View.Static.Welcome where
 import Web.View.Prelude
+-- import Application.Helper.View
 
 data WelcomeView = WelcomeView
 
 instance View WelcomeView where
     html WelcomeView = [hsx|
     <div class="Landing" >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="/home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/BlogPosts">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/contact" tabindex="-1" aria-disabled="true">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
+      {renderNavBar}
         <div class="LandingLogo">
+          <div class="LandingImageWrapper">
             <img class="LogoImage" src="./rika-light-icon.svg">
-            <img>
+          </div>
 
             <div class="LogoTextWrapper">
                 <h1 class="LogoText">
@@ -65,7 +44,6 @@ instance View WelcomeView where
     </div> 
          
 |]
-
 
 -- elements to add 
 -- <button class="ThemeToggle" onclick="">

@@ -51,3 +51,20 @@ Some ideas On Admin management:
   can then generate other keys to invite other admins. The set of keys an admin can create is limited.
 - Changed the blog page to mostlty be modifiable through the admin application.
 - Made some responsive tweaks.
+
+### 8 Feb 2023
+
+Some idea on the core and app interface:
+
+There was this notion of using tags to display the inner semantics of the core to the web front-end. It's like the tags are a symbolic representation
+(Kinda like the show instance) of structures in the core. There could be an automated representation generation system but that's subject to more thought
+on how the core and the web app communicate.
+
+### 15 Feb 2023
+
+- Made some chnages to the blog page to dispaly the posts list in a pleasing way (go cards!!).
+- A bug with getting some entries from the d.b (Maybe has to do with foreign keys...).
+- Fixed the weird bug with the nav bar shrinking.
+- The nav bar still behaves weirdly in smaller screens.
+- Found a library for the map... looks promising (Might have to work with npm, hope nix won't be a fritz).
+- Need to work faster, the drought is really killing!!!
