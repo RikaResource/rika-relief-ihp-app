@@ -51,6 +51,13 @@
     transition: all .5s;
 }
 
+.home-nav {
+    z-index: 2;
+}
+
+/* .LandingImageWrapper {
+    background-color: green;
+} */
 .LogoImage {
     position: absolute;
     display: block;

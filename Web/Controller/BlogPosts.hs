@@ -13,7 +13,7 @@ instance Controller BlogPostsController where
         blogPosts <- query @BlogPost 
                 |> orderByDesc #createdAt
                 |> fetch
-        render IndexView { .. }
+        render IndexView { blogPosts = blogPosts}
 
     action ShowBlogPostAction { blogPostId } = do
         blogPost <- fetch blogPostId
