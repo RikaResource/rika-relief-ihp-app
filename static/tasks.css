@@ -1,0 +1,58 @@
+.tasks-dash-wrapper{
+    color : var(--text-primary);
+    background-color: var(--background);
+    font-size: large;
+    padding: 20px;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    max-width:100%;
+    overflow-x: hidden;
+    height : calc(100vh - 0px);
+    transition: all .5s;
+}
+
+.tasks-dash-content{
+
+}
+
+.tasks-dash-nav{
+    position: absolute;
+    /* background-color: goldenrod; */
+    width: calc(100vw - 94%);
+    height: calc(100vh - 20%);
+    top : calc(50% - ((100vh - 20%)/2));
+    left : calc(50% - ((100vw - 5%)/2));
+    border-radius: 20px;
+    /* border: solid var(--text-primary); */
+    
+}
+
+.tasks-dash-list{
+    position: absolute;
+    background-color: red;
+    width: calc(100vw - 20%);
+    height: calc(100vh - 20%);
+    top : calc(50% - ((100vh - 20%)/2));
+    left : calc(50% - ((100vw - 30%)/2));
+}
+
+.tasks-dash-add-button{
+    position: absolute;
+    /* background-color: orchid; */
+    width: 80px;
+    height: 80px;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    border-radius: 80px;
+    border: solid var(--text-primary);
+    display: flex;
+    justify-content: center;
+}
+
+.tasks-dash-add-button-image{
+    margin : 20%;
+}

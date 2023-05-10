@@ -10,7 +10,7 @@ instance View WelcomeView where
       {renderNavBar}
         <div class="LandingLogo">
           <div class="LandingImageWrapper">
-            <img class="LogoImage" src="./rika-light-icon.svg">
+            <img class="LogoImage" src="./rika-light-logo.svg">
           </div>
 
             <div class="LogoTextWrapper">
@@ -24,7 +24,7 @@ instance View WelcomeView where
         <div class="LandingContent">
             <div class="LandingMain">
                 <h2 class="MainLandingText">
-                    A friend to those in need.
+                    A Peer Resource Network.
                 </h2>
             </div>
 
@@ -49,3 +49,7 @@ instance View WelcomeView where
 -- <button class="ThemeToggle" onclick="">
 --             Switch to Theme
 --         </button>
+
+-- <button class="AppButton btn btn-secondary" onclick="window.open('/rikarelief/');">
+--                         RikaRelief
+--                     </button>

@@ -20,5 +20,6 @@ instance FrontController WebApplication where
 
 instance InitControllerContext WebApplication where
     initContext = do
+        currentTime <- getCurrentTime
         setLayout defaultLayout
         initAutoRefresh

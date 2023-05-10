@@ -23,7 +23,7 @@
     background-color: red;
     width: calc(100vw - 20%);
     height: calc(100vh - 20%);
-    top : calc(50% - ((100vh - 20%)/2));
+    top : calc((50% - ((100vh - 20%)/2)) - 80px);
     left : calc(50% - ((100vw - 20%)/2));
 }
 .admin-intro {
@@ -64,24 +64,6 @@
 }
 .admin-resources-tile {
     background-color: purple;
-    /* flex: 200px; */
-    height : 300px;
-    width: 300px;
-    flex: 1;
-    margin: 20px;
-    border: 1px solid seashell;
-}
-.admin-interact-tile {
-    background-color: goldenrod;
-    /* flex: 200px; */
-    height : 300px;
-    width: 300px;
-    flex: 1;
-    margin: 20px;
-    border: 1px solid seashell;
-}
-.admin-keys-tile {
-    background-color: orchid;
     /* flex: 200px; */
     height : 300px;
     width: 300px;
@@ -164,22 +146,6 @@
         flex: 1;
         margin: 10px;
     }
-    .admin-interact-tile {
-        background-color: goldenrod;
-        /* flex: 200px; */
-        height : 300px;
-        width: 200px;
-        flex: 1;
-        margin: 10px;
-    }
-    .admin-keys-tile {
-        background-color: orchid;
-        /* flex: 200px; */
-        height : 300px;
-        width: 200px;
-        flex: 1;
-        margin: 10px;
-    }
     .admin-app-tile {
         background-color: orangered;
         /* flex: 200px; */
@@ -236,22 +202,6 @@
     }
     .admin-resources-tile {
         background-color: purple;
-        /* flex: 200px; */
-        height : 300px;
-        width: 200px;
-        flex: 1;
-        margin: 10px;
-    }
-    .admin-interact-tile {
-        background-color: goldenrod;
-        /* flex: 200px; */
-        height : 300px;
-        width: 200px;
-        flex: 1;
-        margin: 10px;
-    }
-    .admin-keys-tile {
-        background-color: orchid;
         /* flex: 200px; */
         height : 300px;
         width: 200px;
