@@ -10,11 +10,14 @@ import Web.FrontController
 import Web.Types
 -- import Admin.FrontController
 -- import Admin.Types
+-- import RikaRelief.FrontController
+-- import RikaRelief.Types
 
 instance FrontController RootApplication where
     controllers = [
             mountFrontController WebApplication
             -- , mountFrontController AdminApplication
+            -- , mountFrontController RikaReliefApplication
         ]
 
 instance Worker RootApplication where

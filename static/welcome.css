@@ -26,6 +26,9 @@
     left:0;
     right:0;
     /* max-width:100%; */
+    min-height : 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
     height : calc(100vh - 0px);
     transition: all .5s;
     text-align: center;
@@ -123,12 +126,28 @@
     height: calc(100% / 3);
     left : calc(50% - (calc(100% / 3)));
 }
+.ParticipateForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .ParticipateButton {
-    position: absolute;
+    /* position: absolute; */
     /* bottom: 10px; */
     width : 200px;
     height: 50px;
     left : calc(50% - calc(200px / 2));
     top : calc(50% - calc(50px / 2));
+    margin: 10px;
+}
+
+.AppButton {
+    /* position: absolute; */
+    /* bottom: 10px; */
+    width : 200px;
+    height: 50px;
+    left : calc(50% - calc(200px / 2));
+    top : calc(50% - calc(50px / 2));
+    margin: 10px;
 }

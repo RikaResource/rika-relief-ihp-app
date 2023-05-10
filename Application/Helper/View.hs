@@ -1,4 +1,4 @@
-module Application.Helper.View(renderNavBar) where
+module Application.Helper.View(renderNavBar,footer) where
 
 import IHP.ViewPrelude
 
@@ -30,3 +30,16 @@ renderNavBar = [hsx|
                     </div>
                   </nav>
 |]
+
+footer ::  Html
+footer =  [hsx|
+        <footer class="footerclass">
+            <div>
+            <a href="https://infidyn.org" target="_blank" rel="noopener noreferrer">
+                Powered by
+                <img src="/symbollogo.svg" alt="InfiDyn" class="footerlogo" />
+            </a>
+                © All Rights Reserved
+            </div>
+        </footer>
+    |]
