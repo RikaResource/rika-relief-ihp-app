@@ -1,5 +1,5 @@
 .DS_Store
-.envrc
+# .envrc
 .idea
 tmp
 result
@@ -22,3 +22,14 @@ notes.txt
 ihp-notes.md
 # Ignore locally checked out IHP version
 IHP
+
+# Upgrade to 1.1.0 from 1.0.1
+.devenv*
+devenv.local.nix
+.direnv
+.env
+
+## Ignore apps still in development
+Admin
+Application
+RikaRelief

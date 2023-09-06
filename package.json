@@ -1,0 +1,24 @@
+{
+  "name": "rika-relief-ihp-webapp",
+  "version": "1.0.0",
+  "description": "The web app for the RikaRelief Platform ",
+  "main": "index.js",
+  "dependencies": {
+    "kepler.gl": "^2.5.5",
+    "mapbox-gl": "^2.13.0",
+    "redux": "^4.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RikaRelief/rika-relief-ihp-app.git"
+  },
+  "author": "z3r0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RikaRelief/rika-relief-ihp-app/issues"
+  },
+  "homepage": "https://github.com/RikaRelief/rika-relief-ihp-app#readme"
+}

@@ -1,6 +1,40 @@
+.app-content {
+    background: rgb(223, 192, 18);
+    min-height : 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height : calc(100vh - 0px);
+    transition: all .5s;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.resource-canvas {
+    width: 100%;
+    height: 100%;
+    background: rgb(102, 137, 209);
+    padding: 5px;
+}
+
+.resource-content-holder{
+    position: absolute;
+    left: calc(50% - ((85% - 50px)/2));
+    top: calc(50% - ((85% - 50px)/2));
+    bottom: 100px;
+    width: calc(85% - 50px);
+    height: calc(85% - 50px);
+    padding: 10px;
+    background: rgb(17, 240, 110);
+}
+
 .footerclass {
+    position: absolute;
     width: 100%;
     height: 100px;
+    bottom: 1px;
+    /* background: rgb(223, 18, 18); */
     border-top: 1px solid #eaeaea;
     display: flex;
     justify-content: center;
@@ -19,8 +53,4 @@
 
 .footerlogo {
     height: 1.3em;
-}
-
-.welcome-app-content {
-    
 }
