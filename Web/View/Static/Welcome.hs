@@ -24,7 +24,7 @@ instance View WelcomeView where
         <div class="LandingContent">
             <div class="LandingMain">
                 <h2 class="MainLandingText">
-                    A Peer Resource Network.
+                    A Peer 2 Peer Resource Network.
                 </h2>
             </div>
 
