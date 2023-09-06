@@ -9,7 +9,7 @@
         systems.follows = "ihp/systems";
     };
 
-    outputs = inputs@{ ihp, flake-parts, systems, ... }:
+    outputs = inputs@{ ihp, flake-parts, systems, nixpkgs, self, ... }:
         flake-parts.lib.mkFlake { inherit inputs; } {
 
             systems = import systems;
@@ -37,6 +37,19 @@
                         # http-streams
                     ];
                 };
+            };
+
+            flake.nixosConfigurations."test-server-one" = nixpkgs.lib.nixosSystem {
+                system = "x86_64-linux";
+                specialArgs = inputs // {
+                    environment = "production";
+                    ihp-migrate = self.packages.x86_64-linux.migrate;
+                    ihpApp = self.packages.x86_64-linux.default;
+                };
+                modules = [
+
+                    ./nixos/configuration.nix
+                ];
             };
 
         };
