@@ -24,7 +24,7 @@ instance View WelcomeView where
         <div class="LandingContent">
             <div class="LandingMain">
                 <h2 class="MainLandingText">
-                    A Peer 2 Peer Resource Network.
+                    A Peer Resource Network.
                 </h2>
             </div>
 
@@ -33,9 +33,12 @@ instance View WelcomeView where
                     Join Us!
                 </h3>
                 <div class="ParticipateForm">
-                    <button class="ParticipateButton btn btn-secondary" onclick="window.open('https://github.com/RikaRelief');">
+                    <button class="ParticipateButton btn btn-secondary" onclick="window.open('https://github.com/RikaResource');">
                         Participate
                     </button>
+                    <button class="AppButton btn btn-secondary" onclick="window.open('/rikarelief/');">
+                         RikaResource
+                     </button>
                 </div>
             </div>
             

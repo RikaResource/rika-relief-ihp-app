@@ -7,5 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.17.4",
+    "ihp-datasync": "https://gitpkg.now.sh/digitallyinduced/ihp/lib/IHP/DataSync?0babfec7a90675ca37d56c38dac69e784e64fc83",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }

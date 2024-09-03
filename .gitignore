@@ -23,6 +23,9 @@ ihp-notes.md
 # Ignore locally checked out IHP version
 IHP
 
+# trash
+privtrash
+
 # Upgrade to 1.1.0 from 1.0.1
 .devenv*
 devenv.local.nix
@@ -31,5 +34,5 @@ devenv.local.nix
 
 ## Ignore apps still in development
 Admin
-Application
-RikaRelief
+# Application
+# RikaRelief
