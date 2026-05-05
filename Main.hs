@@ -8,16 +8,16 @@ import IHP.FrameworkConfig
 import IHP.Job.Types
 import Web.FrontController
 import Web.Types
--- import Admin.FrontController
--- import Admin.Types
--- import RikaRelief.FrontController
--- import RikaRelief.Types
+import Admin.FrontController
+import Admin.Types
+import RikaRelief.FrontController
+import RikaRelief.Types
 
 instance FrontController RootApplication where
     controllers = [
             mountFrontController WebApplication
-            -- , mountFrontController AdminApplication
-            -- , mountFrontController RikaReliefApplication
+            , mountFrontController AdminApplication
+            , mountFrontController RikaReliefApplication
         ]
 
 instance Worker RootApplication where

@@ -13,6 +13,7 @@ let
             hlint
             p.ihp
             mmark
+            wreq
         ];
         otherDeps = p: with p; [
             # Native dependencies, e.g. imagemagick

@@ -2,7 +2,7 @@
     inputs = {
         # Here you can adjust the IHP version of your project
         # You can find new releases at https://github.com/digitallyinduced/ihp/releases
-        ihp.url = "github:digitallyinduced/ihp/v1.1";
+        ihp.url = "github:digitallyinduced/ihp/v1.3";
         nixpkgs.follows = "ihp/nixpkgs";
         flake-parts.follows = "ihp/flake-parts";
         devenv.follows = "ihp/devenv";
@@ -39,7 +39,7 @@
                 };
             };
 
-            flake.nixosConfigurations."test-server-one" = nixpkgs.lib.nixosSystem {
+            flake.nixosConfigurations."rika-relief-ihp-app" = nixpkgs.lib.nixosSystem {
                 system = "x86_64-linux";
                 specialArgs = inputs // {
                     environment = "production";
