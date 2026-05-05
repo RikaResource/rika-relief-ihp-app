@@ -67,4 +67,9 @@ on how the core and the web app communicate.
 - Fixed the weird bug with the nav bar shrinking.
 - The nav bar still behaves weirdly in smaller screens.
 - Found a library for the map... looks promising (Might have to work with npm, hope nix won't be a fritz).
-- Need to work faster, the drought is really killing!!!
+
+
+### 5 May 2026
+
+- A couple of yrs later.
+- We have a lot more tools in our toolbox. Exciting!
